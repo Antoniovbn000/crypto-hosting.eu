@@ -1,0 +1,640 @@
+w.rtl-row {direction: rtl;}
+.rtl-row div{direction: initial;}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+::-webkit-scrollbar {
+    display:none;
+}
+:root{
+    --aqua-:#45D621;
+    --secondary-:#1E1734;
+    --primary-:#212147;
+    --normal-:#CCCCCC;
+    --transparent-:transparent
+
+    --xxl:3.5em;
+    --big:1.6em;
+    --medium:1.4em;
+    --normal:1.3em;
+    --small:1.16em;
+}
+.text-xxl{font-size:var(--xxl)}
+.text-big{font-size:var(--big)}
+.text-medium{font-size:var(--medium)}
+.text-normal{font-size:var(--normal)}
+.text-small{font-size:var(--small)}
+.text-aqua{color:var(--aqua-)}
+.text-primary-{color:var(--primary-)}
+.text-secondary{color:var(--secondary-)}
+.text-white{color:var(--white-)}
+.text-normal{color:var(--normal-)}
+.text-bold{font-weight: bold;}
+.text-lighter{font-weight: lighter;}
+.button__primary {
+	font-weight: bold;
+	color:var(--primary-);
+	border-radius:5px;
+	padding:15px 40px;
+	text-decoration: none;
+	display: inline-block;
+	background: var(--aqua-);
+}
+a.button__primary:hover {
+    color: var(--primary-)
+}
+a.button__primary:not(.location) {
+    background: var(--aqua-);
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    transition: background 300ms ease-in-out, color 300ms ease-in-out;
+}
+button.button__price {
+    background-color: var(--primary-) !important;
+    color: var(--aqua-) !important;
+    transition: all 300ms ease-in-out !important;
+}
+
+button.button__price:hover {
+    background-color: var(--aqua-) !important;
+    color: var(--primary-) !important;
+}
+a.nav-link.button__primary:not(.BTN__EU):hover {
+    color:var(--aqua-) !important;
+    background: var(--secondary-);
+	text-decoration: none;
+}
+a.button__primary:not(.BTN__EU):hover {
+	color:var(--aqua-);
+    background: var(--secondary-);
+	text-decoration: none;
+    
+}
+.button__secondary{font-weight: bold;background-color:var(--secondary-);color:var(--aqua-);border-radius:5px;padding:15px 40px;text-decoration: none;display: inline-block;}
+.button__secondary {
+	 background-image: linear-gradient(var(--aqua-), var(--aqua-));
+  	background-size: 0% 256px;
+  	border-radius: 4px;
+  	background-repeat: no-repeat;
+  	transition: background-size 350ms ease-in-out, color 350ms ease-in-out;
+  	background-position: 0 calc(100% - 50px) top;
+	
+}
+
+.button__secondary:hover {
+	color:var(--primary-);
+	text-decoration: none;
+	background-size: 100% 256px;
+}
+body{background-color: var(--primary-) !important;color: var(--normal-) !important;font-size:var(--normal) !important;}
+h1{color:white}
+
+/*            Navbar            */
+.top__nav{
+    background-color: var(--secondary-);
+    margin-bottom:10px;
+}
+.top__nav ul li{
+    font-size:1em !important;
+    color:#CCCCCC;
+    padding:0px 40px 0px 0px !important;
+}
+.top__nav ul li::after{
+    display:none;
+}
+.navbar .navbar-brand{
+    color:var(--aqua-) !important;
+    font-weight: bold;
+}
+.navbar .material-icons{
+    color:white;
+}
+.navbar .material-icons:focus{
+    outline: none;
+    border:none;
+}
+.navbar .navbar-brand img{
+    margin-right:30px;
+    margin-top:-7px;
+}
+.navbar .navbar-collapse ul li a{
+    color: var(--normal-) !important;
+}
+.navbar .navbar-collapse ul li{
+    padding:15px 50px;
+    font-size:var(--small);;
+    position:relative;
+}
+@media only screen and (max-width:980px){
+    .navbar .navbar-collapse ul li{
+        padding:15px 20px;
+    }
+    .navbar .navbar-collapse .button__primary{
+        padding:15px 20px !important;
+    }
+    .navbar .navbar-collapse .navbar-nav > li:not(:last-child):after{
+        display:none;
+    }
+}
+.navbar .navbar-collapse .navbar-nav > li:not(:last-child):after{
+    content:'';
+    width:20px;
+    height:3px;
+    left:calc(100% - 10px);
+    top:calc(50% - 1.5px);
+    background-color:var(--aqua-);
+    position:absolute;
+    border-radius:5px;
+}
+.navbar .navbar-collapse .button__primary{
+    color:var(--primary-) !important;
+}
+.dropdown-menu{
+    background-color:var(--secondary-) !important;
+    color:white;
+    display: block !important;
+    pointer-events: none !important;
+    left: 0 !important;
+    opacity: 0 !important;
+  transform: translateY(-10px) !important;
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out !important;
+}
+
+.dropdown-menu.show {
+  opacity: 1 !important;
+   transform: translateY(0) !important;
+  pointer-events: auto !important;
+}
+.dropdown {
+    height: 85px;
+    transition: height 300ms ease-in-out;
+}
+
+.dropdown-menu li a:hover{
+    background-color:transparent;
+}
+footer{
+    padding:25px 0px;
+    background-color:#131126;
+}
+footer .footer__header h2{
+    display:inline-block;
+    padding:50px 10px;
+    color:var(--aqua-);
+}
+footer ul{
+    list-style-type: none;
+    padding:0px;
+    color:var(--normal-);
+}
+footer ul li{
+    padding:5px;
+}
+footer ul li:first-of-type{
+    color:white;
+    font-weight: bold;
+}
+footer ul li a {
+    color:var(--normal-);
+    transition: margin 300ms ease-in-out, background 300ms ease-in-out;
+    text-decoration: none;
+    background: linear-gradient(to right, rgba(24, 23, 49, 1), rgba(24, 23, 49, 1)), linear-gradient(to right, rgba(28, 212, 168, 1), rgba(28, 212, 168, 1), rgba(28, 212, 168, 1));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    
+}
+
+footer ul li a:hover{
+    color:var(--normal-);
+    background-size: 0 0.1em, 100% 0.1em;
+    margin-left: 5px;
+}
+footer ul li .hidden{
+    visibility: hidden;
+}
+
+.features{
+    margin-top:250px;
+    margin-bottom:250px;
+}
+.features.prices{
+    margin-top:50px;
+    margin-bottom:150px;
+}
+.features .features__card{
+    text-align: center;
+    background-color: var(--secondary-);
+    padding:20px 35px;
+}
+
+.price__card {
+    transform: translateY(0);
+    transition: transform 300ms ease-in-out;  
+}
+
+.price__card:hover {
+    transform: translateY(-20px);
+}
+.features .features__card {
+    transform: translateY(0);
+    transition: transform 300ms ease-in-out;
+}
+
+.features .features__card:hover {
+    transform: translateY(-20px);
+}
+.features .features__card .features__head{
+    position: relative;
+    z-index:2;
+}
+.features .features__card .features__head img{
+    height: 100px;
+    margin-top:20px;
+}
+.features .features__card .features__head svg{
+    position: absolute;
+    left:55%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    height:150px;
+}
+.features .features__card h1{
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color:white;
+    padding-top:25px;
+}
+
+.map{
+    text-align: center;
+    margin-top:200px;
+    margin-bottom:100px;
+}
+.map .map__container{
+    width:70%;
+    position:relative;
+}
+.map .map__container img{
+    width:100%;
+}
+.map .map__container span{
+    position:absolute;
+    font-size:var(--big);
+}
+.map .map__container span{
+    transition: .7s;
+}
+.map .map__container span.FI{
+    top: 29.5%;
+    left: 51.5%;
+}
+.map .map__container span.DE{
+    top: 38%;
+    left: 48.5%;
+}
+.map .map__container a{
+    border-radius:0px;
+}
+.map .map__container a:first-of-type{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin:0px;
+}
+.map .map__container a:last-of-type{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin:0px;
+}
+.location_btn.de:hover ~ span.DE{
+    font-size: var(--xxl);
+    top: 31%;
+    left: 46%;
+}
+.location_btn.fi:hover ~ span.FI{
+    font-size: var(--xxl);
+    top: 23%;
+    left: 49%;
+}
+
+.review__box{
+    position: relative;
+    background-color: var(--aqua-);
+    padding:45px 60px;
+    color:var(--primary-);
+    border-radius:5px;    
+}
+.review__box div{
+    padding-bottom:5px;
+}
+.review__box h1{
+    color:var(--primary-);
+}
+.slick-prev,
+.slick-next{
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: calc(100% + 10px);
+    background-color:white;
+    border:none;
+    border-radius:50px;
+}
+.slick-prev:before,
+.slick-next:before {
+    font-size: 30px;
+    line-height: .5;
+    color: var(--aqua-);
+}
+.slick-prev:before{
+    content: '←';
+}
+.slick-next:before{
+    content: '→';
+}
+.slick-next,
+.slick-nect::before{
+    left:65px;
+}
+.review__section{
+    margin-bottom:200px;
+    margin-top:50px;
+}
+
+.prices{
+    margin-top:150px;
+    margin-bottom:100px;
+}
+.price__card{
+    margin-top:50px;
+    margin-bottom:100px;
+    position:relative;
+    background-color:var(--secondary-);
+    border-radius: 5px;
+}
+.price__card > img{
+    left:50%;
+    transform: translate(80%, -20%);
+    margin:-10px 0;
+}
+.price__card .price__header{
+    text-align: center;
+    color:var(--aqua-) !important;
+}
+.price__card .price__header h1{
+    color:var(--aqua-) !important;
+}
+.price__card .price__header h4{
+    font-weight: 700;
+}
+.price__card .price__header h1::after{
+    content:'/mo';
+    font-size:25px;
+    padding-left:3px;
+}
+.price__card .price__body{
+    padding:35px 50px;
+}
+.price__card .price__body ul{
+    list-style-type: none;
+    padding:0px;
+    margin:0px;
+}
+.price__card .price__body ul li{
+    padding:1px 10px;
+}
+.price__card .price__body ul li b{
+    color:var(--aqua-);
+}
+.price__card .price__footer{
+    padding:10px;
+}
+.price__card .price__footer p{
+    padding-top:10px;
+    padding-left:20px;
+    line-height:0;
+    font-size:small;
+    color:gray;
+}
+.price__card .price__footer .button__price{
+    background-color:var(--primary-);
+    width:100%;
+    border:none;
+    color:var(--aqua-);
+    font-weight: bold;
+    padding:10px;
+    border-radius:5px;
+}
+.price__card.hot{
+    background-color:var(--aqua-);
+}
+.price__card.hot .price__body ul li{
+    color:var(--secondary-) !important;
+}
+.price__card.hot .price__body ul li b{
+    color:var(--primary-);
+}
+.price__card.hot .price__header{
+    text-align: center;
+    color:var(--primary-) !important;
+}
+.price__card.hot .price__header h1{
+    color:var(--primary-) !important;
+}
+.price__card.hot .price__footer .button__price{
+    background-color:var(--aqua-);
+    width:100%;
+    border:none;
+    color:var(--primary-);
+    font-weight: bold;
+    padding:10px;
+    border-radius:5px;
+}
+
+.login__form{
+    margin-top:100px;
+    margin-bottom:200px;
+}
+.login__form{
+    text-align:center;
+}
+.login__form .login__box{
+    background-color:var(--secondary-);
+    padding:35px 50px;
+    text-align:left;
+    max-width:500px;
+    margin:auto auto;
+}
+.login__form .login__box form input[type="text"],
+.login__form .login__box form input[type="email"],
+.login__form .login__box form input[type="tel"],
+.login__form .login__box form input[type="password"]{
+    width:100%;
+    background-color:rgba(255, 255, 255, 0.1);
+    padding:10px 15px;
+    border-radius: 5px;
+    border:none;
+    color:white;
+    margin-bottom:20px;
+    font-size:medium;
+}
+.login__form .login__box form #forgot{
+    float:right;
+    font-size:medium;
+}
+.login__form .login__box form input[type="text"]::placeholder,
+.login__form .login__box form input[type="email"]::placeholder,
+.login__form .login__box form input[type="tel"]::placeholder,
+.login__form .login__box form input[type="password"]::placeholder{
+    color:var(--normal-);
+}
+.login__form .login__box form button{
+    width:100%;
+    border:none;
+    margin-top:30px;
+    padding:10px !important;
+}
+.login__form .create__account{
+    color:var(--normal-);
+    text-decoration: none;
+    line-height: 3;
+    font-size:medium;
+}
+
+.signup__form{
+    margin-top:100px;
+    margin-bottom:200px;
+}
+.signup__form{
+    text-align:center;
+}
+.signup__form .signup__box{
+    background-color:var(--secondary-);
+    padding:35px 50px;
+    text-align:left;
+    max-width:900px;
+    margin:auto auto;
+}
+.signup__form .signup__box form input[type="text"],
+.signup__form .signup__box form input[type="email"],
+.signup__form .signup__box form input[type="tel"],
+.signup__form .signup__box form input[type="password"]{
+    width:100%;
+    background-color:rgba(255, 255, 255, 0.1);
+    padding:10px 15px;
+    border-radius: 5px;
+    border:none;
+    color:white;
+    margin-bottom:20px;
+    font-size:medium;
+}
+.signup__form .signup__box form #forgot{
+    float:right;
+    font-size:medium;
+}
+.signup__form .signup__box form input[type="text"]::placeholder,
+.signup__form .signup__box form input[type="email"]::placeholder,
+.signup__form .signup__box form input[type="tel"]::placeholder,
+.signup__form .signup__box form input[type="password"]::placeholder{
+    color:var(--normal-);
+}
+.signup__form .signup__box form button{
+    width:100%;
+    border:none;
+    margin-top:30px;
+    padding:10px !important;
+}
+.signup__form .create__account{
+    color:var(--normal-);
+    text-decoration: none;
+    line-height: 3;
+    font-size:medium;
+}
+
+.form__section{
+    margin-top:100px;
+    margin-bottom:200px;
+}
+.form__section{
+    text-align:center;
+}
+.form__section .form__box{
+    background-color:var(--secondary-);
+    padding:35px 50px;
+    text-align:left;
+    max-width:900px;
+    margin:auto auto;
+}
+.form__section .form__box form input[type="text"],
+.form__section .form__box form input[type="email"],
+.form__section .form__box form input[type="tel"],
+.form__section .form__box form textarea,
+.form__section .form__box form input[type="password"]{
+    width:100%;
+    background-color:rgba(255, 255, 255, 0.1);
+    padding:10px 15px;
+    border-radius: 5px;
+    border:none;
+    color:white;
+    margin-bottom:20px;
+    font-size:medium;
+}
+.form__section .form__box form #forgot{
+    float:right;
+    font-size:medium;
+}
+.form__section .form__box form input[type="text"]::placeholder,
+.form__section .form__box form input[type="email"]::placeholder,
+.form__section .form__box form textarea::placeholder,
+.form__section .form__box form input[type="tel"]::placeholder,
+.form__section .form__box form input[type="password"]::placeholder{
+    color:var(--normal-);
+}
+.form__section .form__box form button{
+    width:100%;
+    border:none;
+    margin-top:30px;
+    padding:10px !important;
+}
+
+.partner__item{
+    margin:50px 0;
+    background-color:var(--secondary-);
+    padding:35px 50px;
+    border-radius: 5px;
+}
+
+.job__item{
+    margin:50px 0;
+    background-color:var(--secondary-);
+    padding:35px 50px;
+    border-radius: 5px;
+}
+.job__item span{
+    font-size:4em;
+    color:white;
+}
+.footer_margin{
+    margin-top: 8%!important;
+}
+.location_btn{
+	font-weight: bold;
+	color:var(--primary-);
+	border-radius:5px;
+	padding:15px 40px;
+	text-decoration: none!important;
+	display: inline-block;
+	background: var(--aqua-);
+}
+.location_btn:hover{
+    color:var(--primary-);
+    cursor: default;
+}
